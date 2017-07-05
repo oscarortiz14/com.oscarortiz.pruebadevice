@@ -1,0 +1,55 @@
+#background {
+  /*background-color: aquamarine;*/ }
+  #background #main {
+    height: calc(100vh - 48px);
+    overflow: auto; }
+  #background #footer {
+    position: fixed;
+    max-width: 100%;
+    bottom: 0;
+    right: 0; }
+
+@media (min-width: 0) and (max-width: 960px) and (orientation: portrait) {
+  #background #main {
+    height: calc(100vh - 56px); } }
+@media (min-width: 0) and (max-width: 960px) and (orientation: landscape) {
+  #background #main {
+    height: calc(100vh - 48px); } }
+.container {
+  margin: 1em;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em; }
+  .container form {
+    padding: 8px 15px; }
+
+.mdi {
+  width: auto;
+  height: auto; }
+  .mdi:before {
+    vertical-align: middle; }
+
+#details {
+  height: 100%; }
+  #details img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 30%; }
+
+#list .md-button:hover {
+  background-color: initial !important; }
+#list .type {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 1px; }
+#list md-list {
+  padding: 0 0 4em 0; }
+
+.md-select-menu-container md-select-menu {
+  max-height: 95vh; }
+  .md-select-menu-container md-select-menu md-content {
+    max-height: 95vh; }
+
+/*# sourceMappingURL=styles.css.map */

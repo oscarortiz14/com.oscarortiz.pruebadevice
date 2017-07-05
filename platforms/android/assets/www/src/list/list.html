@@ -1,0 +1,14 @@
+<div id="list">
+
+    <md-list style="background: white">
+        <md-list-item class="md-2-line" ng-repeat="elm in lista |orderBy:listOptions track by $index" ui-sref="app.people.details({id:{{elm.id}}})">
+            <img ng-src="{{elm.img}}" src='' class="md-avatar" alt="{{elm.name}}" />
+            <div class="md-list-item-text layout-row layout-align-space-between-center">
+                <h3>{{elm.name}}</h3>
+                <div layout='row'><div ng-repeat='t in elm.types' class="type" style='background-color: {{t}}'></div></div>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-list-item>
+    </md-list>
+
+</div>

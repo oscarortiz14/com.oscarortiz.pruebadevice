@@ -1,0 +1,17 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+        <div class="layout-row md-toolbar-tools">
+            <h1 flex>Menú</h1>
+            <md-icon class="mdi mdi-settings" ui-sref="app.settings"></md-icon>
+        </div>
+    </md-toolbar>
+
+    <md-content class="navbar layout-column">
+        <div ng-repeat="el in navList" ui-sref="{{el.sref}}" class="layout-row layout-align-start-center" ng-class="{'selected':el.sref === $state.current.name}">
+            <md-icon class="mdi mdi-{{el.icon}} mdi-24px"></md-icon>
+            <span flex>{{el.text}}</span>
+        </div>
+    </md-content>
+
+</md-sidenav>

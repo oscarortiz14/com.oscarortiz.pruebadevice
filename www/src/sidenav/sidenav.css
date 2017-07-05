@@ -1,0 +1,12 @@
+md-sidenav .navbar div {
+  padding: 16px 8px;
+  cursor: pointer; }
+  md-sidenav .navbar div:hover:not(.selected) {
+    background: lightgray; }
+  md-sidenav .navbar div span {
+    margin-left: 12px; }
+md-sidenav .navbar .selected {
+  background: gray;
+  font-weight: bold; }
+
+/*# sourceMappingURL=sidenav.css.map */

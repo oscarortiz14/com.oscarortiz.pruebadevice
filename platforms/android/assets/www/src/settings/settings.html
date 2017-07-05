@@ -1,0 +1,14 @@
+<div id="settings">
+
+    <div layout="column">
+        <md-input-container flex>
+            <p>Tema</p>
+            <md-select ng-model="theme" ng-change="saveTheme(theme)">
+                <md-option ng-repeat="t in themeList" value="{{t}}">
+                    {{t}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+
+</div>

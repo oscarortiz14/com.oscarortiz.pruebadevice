@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="UTF-8" />
+        <title>IndexedDB: Local Database with HTML5</title>
+
+        <script src="cordova.js"></script>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script src='bower_components/underscore/underscore-min.js'></script>
+
+        <script src="src/app.module.js"></script>
+        <script src="src/app.config.js"></script>
+        <script src="src/app.run.js"></script>
+        <script src="src/home/home.module.js"></script>
+        <script src="src/home/home.controller.js"></script>
+        <script src="src/settings/settings.module.js"></script>
+        <script src="src/settings/settings.controller.js"></script>
+        <script src="src/list/list.module.js"></script>
+        <script src="src/list/list.value.js"></script>
+        <script src="src/list/list.controller.js"></script>
+        <script src="src/sidenav/sidenav.controller.js"></script>
+        <script src="src/toolbar/toolbar.controller.js"></script>
+
+        <script src="src/JsonService.js"></script>
+        <script src="src/SqlService.js"></script>
+
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <link href="resources/icon.css" rel="stylesheet">
+        <link href="bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+        <link href="src/styles/styles.css" rel="stylesheet">
+        <link href="src/styles/animations.css" rel="stylesheet">
+        <link href="src/sidenav/sidenav.css" rel="stylesheet">
+        <link href="src/toolbar/toolbar.css" rel="stylesheet">
+        <link href="src/settings/settings.css" rel="stylesheet">
+        
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div layout="column" id="background" class="md-primary">
+            <div ui-view="toolbar"></div>
+
+            <div ui-view="content" id="main"></div><!-- class="animate-slide-down" -->
+
+            <div ui-view="footer" id="footer"></div>
+
+            <div ui-view="sidenav"></div>
+        </div>
+    </body>
+</html>

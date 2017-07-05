@@ -1,0 +1,58 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-vibration": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-vibration"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-battery-status": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-battery-status"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "mobi.moica.whatsapp": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen@4.0.3"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

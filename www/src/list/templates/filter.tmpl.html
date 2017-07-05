@@ -1,0 +1,30 @@
+<md-dialog flex>
+    <md-toolbar>
+        <div class="md-toolbar-tools layout-align-end-center">
+            <md-button class="md-icon-button" ng-click="close()">
+                <md-icon class="mdi mdi-close" aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <p>Ordenar por:</p>
+            
+            <md-radio-group ng-model="obj.atr">
+                <md-radio-button value="name">Nombre</md-radio-button>
+                <md-radio-button value="power">HP</md-radio-button>
+                <md-radio-button value="types.length">Nº de colores</md-radio-button>
+            </md-radio-group>
+
+            <md-radio-group ng-model="obj.reverse" layout="row" style="margin-top: 3em">
+                <md-radio-button value="">Ascendente</md-radio-button>
+                <md-radio-button value="-">Descendente</md-radio-button>
+            </md-radio-group>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row" layout-align="center">
+        <md-button class="md-raised md-primary" ng-click="filter(obj)">Guardar</md-button>
+    </md-dialog-actions>
+</md-dialog>
