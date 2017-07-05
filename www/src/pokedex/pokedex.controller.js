@@ -2,13 +2,13 @@
 {
     'use strict';
     angular
-            .module('app.list')
-            .controller('ListCtrl', ListCtrl)
-            .controller('ListDetailsCtrl', ListDetailsCtrl)
-            .controller('ListFooterCtrl', ListFooterCtrl);
+            .module('app.pokedex')
+            .controller('PokedexCtrl', PokedexCtrl)
+            .controller('PokedexDetailsCtrl', PokedexDetailsCtrl)
+            .controller('PokedexFooterCtrl', PokedexFooterCtrl);
 
-    function ListCtrl($scope, $rootScope, ValueLista, $state) {
-        $rootScope.lista = ValueLista;
+    function PokedexCtrl($scope, $rootScope, Pokedex, $state) {
+        $rootScope.lista = Pokedex;
 
         if (!$rootScope.listOptions)
             $rootScope.listOptions = 'name';
@@ -16,7 +16,7 @@
         $scope.$state = $state;
     }
 
-    function ListFooterCtrl($scope, $mdToast, $rootScope, $mdDialog, ValueLista) {
+    function PokedexFooterCtrl($scope, $mdToast, $rootScope, $mdDialog, ValueLista) {
 
         $scope.add = function () {
             $mdDialog.show({
@@ -72,10 +72,12 @@
         };
     }
 
-    function ListDetailsCtrl($scope, $rootScope, $stateParams, ValueLista, $http, $mdToast, $state) {
-        $scope.obj = ValueLista[parseInt($stateParams.id)];
+    function PokedexDetailsCtrl($scope, $rootScope, $stateParams, Pokedex, $http, $mdToast, $state) {
+        $scope.obj = Pokedex[$stateParams.id];
+        
+        console.log($scope.obj);
 
         if (!$scope.obj)
-            $state.go('app.people.list');
+            $state.go('app.pokedex.list');
     }
 })();

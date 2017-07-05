@@ -14,6 +14,7 @@
                 
                 'app.home',
                 'app.settings',
-                'app.list'
+                'app.list',
+                'app.pokedex'
             ]);
 })();

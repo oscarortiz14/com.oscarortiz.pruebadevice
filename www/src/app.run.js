@@ -35,6 +35,12 @@
                     return;
                 }
 
+                //Si hay algún md-menu abierto, lo cierra
+                if (angular.element($('md-menu')).scope().$mdMenuIsOpen){
+                    angular.element($('md-menu')).scope().$mdMenu.close();
+                    return;
+                }
+
                 if ($state.current.name === 'app.home') {
                     DeviceService.confirm('', function (btn) {
                         if (btn === 1)

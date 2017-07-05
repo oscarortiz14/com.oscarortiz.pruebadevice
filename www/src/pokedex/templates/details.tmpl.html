@@ -1,0 +1,12 @@
+<div class="layout-column layout-sm-row layout-align-center-center layout-align-sm-space-around-center" id="details">
+    <img ng-src="http://www.smogon.com/dex/media/sprites/xy/{{::obj.species|lowercase}}.gif" width="200" height="200"/>
+
+    <div layout="column" layout-align="center center">
+        <h2>{{obj.species}}</h2>
+
+        <div class='layout-row'>
+            <md-icon class='mdi mdi-alert-octagram'></md-icon>
+            <h3>{{obj.num}}</h3>
+        </div>
+    </div>
+</div>

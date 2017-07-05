@@ -1,0 +1,15 @@
+<div id="pokedex-list">
+
+    <md-list style="background: white">
+        <md-list-item class="md-2-line" ng-repeat="(key,val) in lista|limitTo:30 track by $index"
+                      ng-click="$state.go('app.pokedex.details', {id: key})">
+            <img ng-src="{{val.img}}" src='' class="md-avatar" alt="{{val.species}}" />
+            <div class="md-list-item-text layout-row layout-align-space-between-center">
+                <h3>{{val.species}}</h3>
+                <div layout='row'><div ng-repeat='t in val.types' class="type" style='background-color: {{t}}'></div></div>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-list-item>
+    </md-list>
+
+</div>

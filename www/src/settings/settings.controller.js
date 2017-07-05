@@ -15,7 +15,7 @@
             localStorage.selectedTheme = theme;
 
             location.reload();
-            $mdToast.show($mdToast.simple().textContent('Tema "' + theme + '" establecido'));
+            $mdToast.show($mdToast.simple().textContent('Aplicando tema "' + theme + '"...'));
         };
     }
 })();

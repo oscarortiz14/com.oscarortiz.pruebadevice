@@ -21,6 +21,8 @@
             "app.settings": "Opciones",
             "app.people.list": "Lista",
             "app.people.details": "Detalles",
+            "app.pokedex.list": "Pokedex",
+            "app.pokedex.details": "Pokedex"
         };
     }
 })();

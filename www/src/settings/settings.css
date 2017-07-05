@@ -1,5 +1,7 @@
 #settings {
   background-color: white;
   padding: 0 10px; }
+  #settings md-radio-button {
+    margin: 5px 0; }
 
 /*# sourceMappingURL=settings.css.map */

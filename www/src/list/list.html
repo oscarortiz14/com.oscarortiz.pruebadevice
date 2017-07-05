@@ -1,7 +1,8 @@
 <div id="list">
 
     <md-list style="background: white">
-        <md-list-item class="md-2-line" ng-repeat="elm in lista |orderBy:listOptions track by $index" ui-sref="app.people.details({id:{{elm.id}}})">
+        <md-list-item class="md-2-line" ng-repeat="elm in lista|orderBy:listOptions track by $index"
+                      ng-click="$state.go('app.people.details', {id: elm.id})">
             <img ng-src="{{elm.img}}" src='' class="md-avatar" alt="{{elm.name}}" />
             <div class="md-list-item-text layout-row layout-align-space-between-center">
                 <h3>{{elm.name}}</h3>

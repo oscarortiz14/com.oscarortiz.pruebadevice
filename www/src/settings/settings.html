@@ -3,12 +3,14 @@
     <div layout="column">
         <md-input-container flex>
             <p>Tema</p>
-            <md-select ng-model="theme" ng-change="saveTheme(theme)">
-                <md-option ng-repeat="t in themeList" value="{{t}}">
+            <md-radio-group ng-model="theme" ng-change="saveTheme(theme)" class="layout-row" layout-wrap>
+                <md-radio-button ng-repeat="t in themeList" value="{{t}}" flex-sm="25" flex-xs="50" flex="100">
                     {{t}}
-                </md-option>
-            </md-select>
+                </md-radio-button>
+            </md-radio-group>
         </md-input-container>
+
+        <md-divider></md-divider>
     </div>
 
 </div>

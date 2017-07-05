@@ -19,6 +19,11 @@
                 text: 'Lista',
                 icon: 'sword',
                 sref: 'app.people.list'
+            },
+            {
+                text: 'Pokedex',
+                icon: 'pokeball',
+                sref: 'app.pokedex.list'
             }
         ];
 
